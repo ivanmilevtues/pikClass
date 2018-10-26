@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 
-void squeare(int, int, int);
+void square(int, int, int);
 
 int main() {
     int a,b,c;
     scanf("%d %d %d", &a, &b, &c);
-    squeare(a, b, c);
+    square(a, b, c);
 }
 
-void squeare(int a, int b, int c) {
+void square(int a, int b, int c) {
     double x, x1, x2;
     if(a == 0 && b == 0) {
         printf("Izrodeno uravnenie");
