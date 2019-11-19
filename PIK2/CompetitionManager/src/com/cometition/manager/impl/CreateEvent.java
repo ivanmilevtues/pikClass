@@ -9,16 +9,16 @@ public class CreateEvent {
 
 	// This is your typical example of Polymorphism where. We use the Inteface
 	// instead of the implementation of the event
-	public Competition getEvent(String eventName) {
-		this.typeOfEvent = eventName;
+	public Competition getEvent(String competitionType) {
+		this.typeOfEvent = competitionType;
 
-		if (eventName.equals("football")) {
+		if (competitionType.equals("football")) {
 			return new FootballCompetition();
 		}
-		if (eventName.equals("horse")) {
+		if (competitionType.equals("horse")) {
 			return new HorseComepetition();
 		}
-		if (eventName.equals("formula1")) {
+		if (competitionType.equals("formula1")) {
 			return new Formula1Competition();
 		}
 
